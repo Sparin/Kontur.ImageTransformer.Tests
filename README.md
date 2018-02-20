@@ -27,7 +27,7 @@ nuget restore && msbuild /p:Configuration=Release
 5. Run All в Test Explorer
 
 ### Console
-1. Win + R или открывам командную строку
+1. Win + R -> "cmd" -> OK или открывам командную строку
 2. Переходим в папку с проектом, используя команду cd
 3. Запускаем сервер
 3. packages\xunit.runner.console.2.3.1\tools\net452\xunit.console.exe Kontur.ImageTransformer.Tests\bin\Release\Kontur.ImageTransformer.Tests.dll -diagnostics -html report.html
