@@ -1,0 +1,12 @@
+phantom:
+  address: 169.254.190.246:8080
+  ammo_type: uripost
+  load_profile:
+    load_type: rps
+    schedule: line(0,2000, 5m) line(2000,300,3m) line(300,500,2m) line(500,380,1m) const(380,5m) line(380,413,1m) line(413,200,3m) const(1000,5m) const(200,5m)
+  header_http: '1.1'
+  headers: |
+    [Host: www.target.example.com]
+    [Connection: Keep-Alive]
+telegraf:
+  enabled: false # let's disable telegraf monitoring for this time
